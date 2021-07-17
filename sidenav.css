@@ -1,0 +1,102 @@
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing:border-box;
+ }
+ 
+ body,html{
+   overflow-x:hidden;
+   
+ }
+ 
+ .navigation_bar{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   border:1px solid black;
+   height:65px;
+   background-color:#00225a;
+ }
+ 
+ .navigation_bar .logo{
+   margin:0px 20px;
+   height:30px;
+ }
+ 
+ .navigation_bar #myul{
+   display:flex;
+ }
+ 
+ .navigation_bar #myul a{
+   text-decoration:none;
+   color:white;
+ }
+ 
+ .navigation_bar #myul a:hover {
+   color:#ff5e13;
+ }
+ 
+ .navigation_bar #myul li{
+   list-style:none;
+   margin:7px 35px;
+ }
+ 
+ .navigation_bar #myul .closebtn{
+   display:none;
+ }
+ 
+ .navigation_bar .openbtn{
+   display:none;
+ }
+ 
+  .navigation_bar span a{
+   font-size:2rem;
+   margin-left:10px;
+   color:#ff5e13;
+ }
+ 
+@media (max-width:850px){
+
+    .navigation_bar #myul .closebtn{
+      display:flex;
+      position:absolute;
+      top:0;
+      right:0;
+      margin:10px 20px;
+      font-size:40px;
+    }
+    
+    .navigation_bar .openbtn{
+      display:inline-block;
+      width:44px;
+      height:41px;
+      font-size:25px;
+      margin-right:10px;
+      border:2px solid #ff5e13;
+      border-radius:4px;
+      color:#ff5e13;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    
+    .navigation_bar #myul{
+      flex-direction: column;
+      height:100vh;
+      width:250px;
+      align-items:center;
+      justify-content:center;
+      position:absolute;
+      top:0;
+      left:0;
+      transform:translateX(-320px);
+      transition:ease 0.5s;
+      background-color:#00225a;
+    }
+    
+    .navigation_bar #myul li{
+      margin:30px 20px;
+      font-size:25px;
+    }
+
+}
